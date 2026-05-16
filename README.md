@@ -1,62 +1,99 @@
 <div align="center">
-    <h1><b>Docmost</b></h1>
+    <h1><b>SYMAR Docmost</b></h1>
     <p>
-        Open-source collaborative wiki and documentation software.
+        Collaborative documentation and knowledge management for the SYMAR ecosystem.
         <br />
-        <a href="https://docmost.com"><strong>Website</strong></a> | 
-        <a href="https://docmost.com/docs"><strong>Documentation</strong></a> |
-        <a href="https://twitter.com/DocmostHQ"><strong>Twitter / X</strong></a>
+        Integrated with <strong>SYMAR Knowledge Hub</strong> to organize, manage, and share structured knowledge.
     </p>
 </div>
+
 <br />
 
-## Getting started
+## Overview
 
-To get started with Docmost, please refer to our [documentation](https://docmost.com/docs) or try our [cloud version](https://docmost.com/pricing) .
+`SYMAR-AI/symar-docmost` is the documentation and collaborative wiki layer for the SYMAR platform.  
+It is based on Docmost and is used to create, edit, organize, and maintain internal or shared knowledge in a structured workspace.
 
-## Features
+Within the SYMAR ecosystem, this repository serves as the **documentation interface and content collaboration system**, while [`SYMAR-AI/knowledge-hub`](https://github.com/SYMAR-AI/knowledge-hub) acts as the broader **knowledge repository and integration layer** for storing, connecting, and operationalizing information.
+
+In short:
+
+- **symar-docmost** = where knowledge is written, edited, documented, and collaboratively maintained
+- **knowledge-hub** = where knowledge is aggregated, connected, and made usable across the wider SYMAR system
+
+## How it works
+
+SYMAR Docmost provides a workspace where teams can:
+
+- Create and edit documentation pages
+- Organize knowledge into spaces or categories
+- Collaborate in real time
+- Track revisions and page history
+- Manage user access and permissions
+- Attach files and embed external tools
+- Make documentation searchable and easy to navigate
+
+This makes it useful for:
+
+- Product documentation
+- Internal operational guides
+- Team knowledge bases
+- Research notes
+- Project documentation
+- Shared institutional knowledge
+
+## Connection to SYMAR Knowledge Hub
+
+`SYMAR-AI/knowledge-hub` and `SYMAR-AI/symar-docmost` are complementary parts of the same knowledge ecosystem.
+
+### Role of `symar-docmost`
+This repository focuses on the **authoring and collaboration experience**. It gives users a clean interface for writing and managing knowledge content.
+
+### Role of `knowledge-hub`
+`knowledge-hub` provides the **broader knowledge structure**, which may include centralized organization, indexing, workflows, integrations, and downstream usage of documented content.
+
+### How they connect
+The relationship between the two repositories can be understood as:
+
+1. Knowledge is created and maintained inside **SYMAR Docmost**
+2. That knowledge becomes part of the wider **SYMAR Knowledge Hub**
+3. The Knowledge Hub can then organize, surface, connect, or distribute that information across other SYMAR tools and processes
+
+This means Docmost is the **collaborative documentation front end**, while Knowledge Hub is the **larger system that gives that documentation context, accessibility, and operational value**.
+
+## Key Features
 
 - Real-time collaboration
-- Diagrams (Draw.io, Excalidraw and Mermaid)
-- Spaces
-- Permissions management
-- Groups
-- Comments
-- Page history
-- Search
-- File attachments
-- Embeds (Airtable, Loom, Miro and more)
-- Translations (10+ languages)
+- Structured documentation spaces
+- Searchable knowledge pages
+- Permissions and access control
+- Comments and collaboration workflows
+- File attachments and rich embeds
+- Revision history
+- Multilingual support
+- Flexible knowledge organization for teams and projects
 
-### Screenshots
+## Why this repository exists
 
-<p align="center">
-<img alt="home" src="https://docmost.com/screenshots/home.png" width="70%">
-<img alt="editor" src="https://docmost.com/screenshots/editor.png" width="70%">
-</p>
+The purpose of `symar-docmost` is to give the SYMAR ecosystem a dedicated documentation environment that is easy to use, collaborative, and scalable.
 
-### License
+By connecting it with `knowledge-hub`, SYMAR can ensure that documentation is not isolated, but instead becomes part of a broader, connected knowledge infrastructure.
+
+## License
+
+This repository is based on Docmost.
+
 Docmost core is licensed under the open-source AGPL 3.0 license.  
 Enterprise features are available under an enterprise license (Enterprise Edition).  
 
-All files in the following directories are licensed under the Docmost Enterprise license defined in `packages/ee/License`.
-  - apps/server/src/ee
-  - apps/client/src/ee
-  - packages/ee
+All files in the following directories are licensed under the Docmost Enterprise license defined in `packages/ee/License`:
 
-### Contributing
+- `apps/server/src/ee`
+- `apps/client/src/ee`
+- `packages/ee`
 
-See the [development documentation](https://docmost.com/docs/self-hosting/development)
+## Acknowledgments
 
-## Thanks
-Special thanks to;
+Built on top of the open-source Docmost project.
 
-<img width="100" alt="Crowdin" src="https://github.com/user-attachments/assets/a6c3d352-e41b-448d-b6cd-3fbca3109f07" />
-
-[Crowdin](https://crowdin.com/) for providing access to their localization platform.
-
-
-<img width="48" alt="Algolia-mark-square-white" src="https://github.com/user-attachments/assets/6ccad04a-9589-4965-b6a1-d5cb1f4f9e94" />
-
-[Algolia](https://www.algolia.com/) for providing full-text search to the docs.
-
+Special thanks to the original Docmost contributors and ecosystem.
