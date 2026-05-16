@@ -7,9 +7,9 @@ export default function ShareBranding() {
         variant="default"
         component="a"
         target="_blank"
-        href="https://docmost.com?ref=public-share"
+        href="https://www.symar.ai"
       >
-        Powered by Docmost
+        Powered by SYMAR
       </Button>
     </Affix>
   );
